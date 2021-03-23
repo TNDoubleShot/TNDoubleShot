@@ -4,16 +4,28 @@
 }
 
 body {
-    background: black;
+    background-color: rgb(15, 15, 15);
+    height: 100vh;
+    width: 100vw;
     color: white;
+    background-image: url(assets/pexels-markus-spiske-1089440.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 80px 0px 80px;
+    background: #000;
+}
+
+main {
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #nav-header {
@@ -21,8 +33,12 @@ header {
     flex-direction: row;
 }
 
-#title {
-    color: rgb(5, 9, 230);
+#title-portfolio {
+    margin: 0px 10px 0px 150px;
+}
+
+#nav-header {
+    margin: 0px 150px 0px 10px;
 }
 
 #nav-header li {
@@ -30,4 +46,37 @@ header {
     list-style: none;
     font-weight: bolder;
     cursor: pointer;
+}
+
+.content-main {
+    display: none;
+    height: 90vh;
+    background-color: green;
+    margin: 0px 150px 0px 150px;
+}
+
+.content-active {
+    display: block;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(./assets/progamming-code-4k-nt-480x854.jpg);
+    }
+    header {
+        height: 6vh;
+        font-size: 11px;
+    }
+    main {
+        height: 94vh;
+    }
+    #title-portfolio {
+        margin: 0px auto;
+    }
+    #nav-header {
+        display: none;
+    }
+    .content-main {
+        margin: 0px 20px 0px 20px;
+    }
 }
