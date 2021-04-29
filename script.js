@@ -1,5 +1,4 @@
-generateNavHeader();
-eventNav();
+
 
 let pastActive;
 document.querySelectorAll(".content-main")[0].classList.add("content-active");
@@ -8,15 +7,13 @@ pastActive = 0;
 function generateNavHeader() {
   const liNav = ["HOME", "ABOUT", "SKILLS", "PORTFOLIO"];
   const navHeader = document.querySelector("#nav-header");
-
-  for (let index = 0; index < liNav.length; index += 1) {
-    const textItem = liNav[index];
-    const newListItem = document.createElement("li");
-
+  
+  liNav.forEach((text) => {
+    const newListItem = document.createElement("li")
     newListItem.classList.add("li-nav-header");
-    newListItem.innerText = textItem;
+    newListItem.innerText = text;
     navHeader.appendChild(newListItem);
-  }
+  })
 }
 
 function eventNav() {
@@ -43,4 +40,9 @@ function eventNav() {
       }
     });
   }
+}
+
+window.onload = () => {
+  generateNavHeader();
+  eventNav();
 }

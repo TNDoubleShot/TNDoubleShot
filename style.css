@@ -2,9 +2,13 @@
     margin: 0px;
     padding: 0px;
 }
+@font-face {
+    font-family: Lobster;
+    src: url(./fonts/Lobster-Regular.ttf);
+}
 
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: rgba(10, 10, 10, 0.7);
     height: 100vh;
     width: 100vw;
     color: white;
@@ -20,12 +24,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #000;
-}
-
-main {
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgb(22, 22, 22);
 }
 
 #nav-header {
@@ -34,7 +33,9 @@ main {
 }
 
 #title-portfolio {
+    font-family: lobster, Arial, sans-serif;
     margin: 0px 10px 0px 150px;
+    color: rgba(30,144,255, 1);
 }
 
 #nav-header {
@@ -48,15 +49,19 @@ main {
     cursor: pointer;
 }
 
+main {
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .content-main {
     display: none;
     height: 90vh;
-    background-color: transparent;
     margin: 0px 150px 0px 150px;
 }
 
 .content-active {
-    display: block;
+    display: flex;
 }
 
 @media screen and (max-width: 375px) {

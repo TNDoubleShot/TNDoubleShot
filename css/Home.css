@@ -1,0 +1,68 @@
+.home {
+    align-items: center;
+    justify-content: center;
+}
+
+#main-home {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.firstDot, .secondDot, .dotImage {
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.firstDot {
+    width: 300px;
+    height: 300px;
+    background: rgba(30,144,255, 0.4);
+    position: absolute;
+}
+
+.secondDot {
+    width: 250px;
+    height: 250px;
+    background: rgba(30,144,255, 1);
+}
+
+.dotImage {
+    width: 230px;
+    height: 230px;
+    background: black;
+}
+.square-info, .infoUser {
+    margin-top: 150px;
+}
+.square-info {
+    background: rgb(17, 17, 17);
+    width: 400px;
+    height: 300px;
+    border-radius: 3%;
+}
+.infoUser {
+    width: 350px;
+}
+
+.nameOcupationAndContact {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.userName {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.ocupationUser {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
