@@ -75,7 +75,7 @@ main {
     display: flex;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     body {
         background-image: url(./assets/progamming-code-4k-nt-480x854.jpg);
     }
