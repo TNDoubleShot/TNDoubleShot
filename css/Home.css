@@ -18,30 +18,29 @@
 }
 
 .firstDot {
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     background: rgba(30,144,255, 0.4);
     position: absolute;
 }
 
 .secondDot {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
     background: rgba(30,144,255, 1);
 }
 
 .dotImage {
-    width: 230px;
-    height: 230px;
+    width: 240px;
+    height: 240px;
     background: black;
 }
 .square-info, .infoUser {
-    margin-top: 150px;
+    margin-top: 165px;
 }
 .square-info {
     background: rgb(17, 17, 17);
     width: 400px;
-    height: 300px;
     border-radius: 3%;
 }
 .infoUser {
