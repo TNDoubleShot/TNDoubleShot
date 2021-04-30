@@ -43,9 +43,6 @@
     width: 400px;
     border-radius: 3%;
 }
-.infoUser {
-    width: 350px;
-}
 
 .nameOcupationAndContact {
     width: 400px;
@@ -58,10 +55,27 @@
     font-weight: bold;
 }
 
-.ocupationUser {
+.occupationUser {
     display: block;
     margin-top: 5px;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 35px 0;
+}
+
+.social-media {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: green;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

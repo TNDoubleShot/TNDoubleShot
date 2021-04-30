@@ -24,7 +24,8 @@ body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-  }
+}
+
 header {
     height: 10vh;
     display: flex;
@@ -61,7 +62,6 @@ header {
 main {
     position: relative;
     top: 10vh;
-    height: 90vh;
 }
 
 .content-main {
@@ -76,16 +76,6 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background-image: url(./assets/progamming-code-4k-nt-480x854.jpg);
-    }
-    header {
-        height: 6vh;
-        font-size: 11px;
-    }
-    main {
-        height: 94vh;
-    }
     #title-portfolio {
         margin: 0px auto;
     }
@@ -93,6 +83,6 @@ main {
         display: none;
     }
     .content-main {
-        margin: 0px 20px 0px 20px;
+        margin: 0px auto;
     }
 }
