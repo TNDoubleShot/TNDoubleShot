@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: Lobster;
+    src: url(./fonts/Lobster-Regular.ttf);
+}
+
+body {
+    background-color: rgba(10, 10, 10, 0.7);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(22, 22, 22);
+    width: 100%;
+    position: absolute;
+}
+
+#nav-header {
+    display: flex;
+    flex-direction: row;
+}
+
+#title-portfolio {
+    font-family: lobster, Arial, sans-serif;
+    margin: 0px 10px 0px 150px;
+    color: rgba(30,144,255, 1);
+}
+
+#nav-header {
+    margin: 0px 150px 0px 10px;
+}
+
+#nav-header li {
+    margin-left: 10px;
+    list-style: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+    top: 10vh;
+}
+
+.content-main {
+    display: none;
+    height: 90vh;
+    margin: 0px 150px 0px 150px;
+    
+}
+
+.content-active {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    #title-portfolio {
+        margin: 0px auto;
+    }
+    #nav-header {
+        display: none;
+    }
+    .content-main {
+        margin: 0px auto;
+    }
+}
