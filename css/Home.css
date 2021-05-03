@@ -71,19 +71,20 @@
     margin: 10px 0 35px 0;
 }
 
-.social-media {
+.social-media, .social-media:hover {
     width: 45px;
     height: 45px;
-    border: 2px solid white;
     border-radius: 50%;
-    background: white;
     margin-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-
+.social-media {
+    border: 2px solid white;
+    background: white;
+}
 .social-media:hover {
     background: rgba(30,144,255, 1);
     border: 2px solid rgba(30,144,255, 1);
