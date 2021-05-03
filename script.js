@@ -1,4 +1,4 @@
-import socialMedia from './social.js';
+import socialMedia from "./social.js";
 
 let pastActive = 0;
 document.querySelectorAll(".content-main")[0].classList.add("content-active");
@@ -6,13 +6,13 @@ document.querySelectorAll(".content-main")[0].classList.add("content-active");
 function generateNavHeader() {
   const liNav = ["HOME", "ABOUT", "SKILLS", "PORTFOLIO"];
   const navHeader = document.querySelector("#nav-header");
-  
+
   liNav.forEach((text) => {
-    const newListItem = document.createElement("li")
+    const newListItem = document.createElement("li");
     newListItem.classList.add("li-nav-header");
     newListItem.innerText = text;
     navHeader.appendChild(newListItem);
-  })
+  });
 }
 function eventNav() {
   const allLiNav = document.querySelectorAll(".li-nav-header");
@@ -39,22 +39,27 @@ function eventNav() {
     });
   }
 }
-
 function generateSocialMedia() {
-  const contacts = document.querySelector('.contacts');
+  const contacts = document.querySelector(".contacts");
 
   socialMedia.forEach((item) => {
-    const newContact = document.createElement('div');
-    const image = document.createElement('img');
+    const linkToSocialMedia = document.createElement("a");
+    const newContact = document.createElement("div");
+    const image = document.createElement("img");
+
+    linkToSocialMedia.href = item.url;
+    linkToSocialMedia.target = "_blank";
     image.src = item.icon;
     image.alt = item.description;
-    newContact.classList.add('social-media');
+    newContact.classList.add("social-media");
+
     newContact.appendChild(image);
-    contacts.appendChild(newContact);
-  })
+    linkToSocialMedia.appendChild(newContact);
+    contacts.appendChild(linkToSocialMedia);
+  });
 }
 window.onload = () => {
   generateNavHeader();
   eventNav();
   generateSocialMedia();
-}
+};
