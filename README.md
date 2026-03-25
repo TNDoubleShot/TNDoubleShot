@@ -1,8 +1,7 @@
 ### Olá 👋
 ## Sou Maximiliano Alvarenga (Max)
 - Moro em Coxim-Ms, mas aberto para conhecer o Brasil e o mundo  
-- Curso atualmente Sistemas de Informação pela Universidade Federal de Mato Grosso do Sul (UFMS)  
-- Sou estudante de Desenvolvimento Web Fullstack pela [Trybe](https://www.betrybe.com/), e  
+- Curso atualmente Tecnologia em Sistemas para Internet (IFMS), e  
 - Estou estudando JavaScript, HTML, CSS, React, Node, Express.js, SQL, Git, entre outras linguagens e frameworks.  
 ## Entre em contato comigo
 
