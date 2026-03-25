@@ -27,7 +27,7 @@ const socialMedia = [
       name: "Instagram",
       icon: "./assets/instagram.png",
       description: "Icon Instagram",
-      url: "https://www.instagram.com/max_bispo/",
+      url: "https://www.instagram.com/dev.max_bispo/",
     },
 ];
 
