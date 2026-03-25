@@ -14,6 +14,7 @@ function generateNavHeader() {
     navHeader.appendChild(newListItem);
   });
 }
+
 function eventNav() {
   const allLiNav = document.querySelectorAll(".li-nav-header");
   const sectionsMain = document.querySelectorAll(".content-main");
@@ -39,6 +40,7 @@ function eventNav() {
     });
   }
 }
+
 function generateSocialMedia() {
   const contacts = document.querySelector(".contacts");
 
@@ -58,6 +60,7 @@ function generateSocialMedia() {
     contacts.appendChild(linkToSocialMedia);
   });
 }
+
 window.onload = () => {
   generateNavHeader();
   eventNav();
